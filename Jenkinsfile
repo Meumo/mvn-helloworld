@@ -5,12 +5,12 @@ node {
 	}
 	 stage('Build') {
 	     sh '''
-	       cd /src/main/java &&  javac HelloWorld.java
+	       javac HelloWorld.java
 		 '''
 		 }
 		  stage('Run') {
 		      sh '''
-		          cd /src/main/java && java HelloWorld
+		          java HelloWorld
 			  '''
 			  }
 			  }
