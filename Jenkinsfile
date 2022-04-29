@@ -1,16 +1,16 @@
 
 node {
     stage('Clone') {
-        git 'https://github.com/Meumo/mvn-helloworld.git'
+        git 'https://github.com/priximmo/jenkins-helloworld.git'
 	}
 	 stage('Build') {
 	     sh '''
-	       javac HelloWorld.java
+	       javac Main.java
 		 '''
 		 }
 		  stage('Run') {
 		      sh '''
-		          java HelloWorld
+		          java Main
 			  '''
 			  }
 			  }
